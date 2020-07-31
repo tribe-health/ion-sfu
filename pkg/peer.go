@@ -1,6 +1,7 @@
 package sfu
 
 import (
+	"errors"
 	"fmt"
 	"sync"
 	"time"
@@ -14,6 +15,11 @@ import (
 
 const (
 	statCycle = 6 * time.Second
+)
+
+var (
+	errSdpParseFailed           = errors.New("sdp parse failed")
+	errPeerConnectionInitFailed = errors.New("pc init failed")
 )
 
 // Peer represents a sfu peer connection

@@ -5,6 +5,7 @@ go 1.13
 require (
 	github.com/golang/protobuf v1.4.2
 	github.com/gorilla/websocket v1.4.2
+	github.com/lucas-clemente/quic-go v0.17.3
 	github.com/lucsky/cuid v1.0.2
 	github.com/pion/rtcp v1.2.3
 	github.com/pion/rtp v1.6.0
